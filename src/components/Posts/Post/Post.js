@@ -35,7 +35,7 @@ const Post = ({ post, setCurrentId }) => {
         </Typography>
       </div>
       <div className={classes.overlay2}>
-        <Button style={{ color: "white" }} size="small" onClick={() => setCurrentId(post.id)}>
+        <Button style={{ color: "white" }} size="small" onClick={() => setCurrentId(post._id)}>
           <MoreHorizIcon fontSize="default" />
         </Button>
       </div>
@@ -50,7 +50,7 @@ const Post = ({ post, setCurrentId }) => {
         </Typography>
 
       <CardContent>
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="body2" color="textSecondary" component="p">
           {post.message}
         </Typography>
       </CardContent>
